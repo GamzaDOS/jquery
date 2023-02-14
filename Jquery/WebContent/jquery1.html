@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+제이쿼리를 사용하기 위해서는 자바스크립트로 구현된 jqeury 소스가 필요하다.<br>
+
+<h1>제이쿼리 학습중</h1>
+<h1>나도 h1</h1>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+  
+<script>
+// $("h1").click(function (){   $("h1").hide();    }        ); // h1에 해당되는 모든 요소가 사라짐
+// $("h1").click(function (){   $(this).hide();    }        ); // this는 클릭한 요소만 사라짐
+</script>
+
+<script>
+ $(document).ready(function (){$("h1").click(function (){   $(this).hide();    }        );}); 
+//문서를 다 읽고 해당 제이쿼리를 실행하라는 뜻
+//뒤쪽에 넣어야 로딩속도가 상대적으로 더 빠름(내용이 먼저 클라이언트가 읽을 수 있게)
+//this는 현재 요소를 선택, "*"는 모든 요소
+</script>
+
+<script>
+
+</script>
+
+
+</body>
+</html>

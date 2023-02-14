@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id="button1">보여줘</button>
+<img id="dog" src="ddddxd2.webp.jpg"
+alt="" width="120" height="100" style="display: none" />
+	<script>
+		var i=true;  //i=false일때 숨기기 , i=true 보기
+		$(document).ready(function() {
+			$("#button1").click(function() {
+				//버튼의 상태를 읽어서 
+				if(i){
+					$("#dog").show("fast");
+					$("#button1").text("숨겨져");
+				}else{
+					$("#dog").hide("fast");
+					$("#button1").text("보여줘");
+				}
+				i =! i;
+				
+				//해당 처리를 하고 
+				//버튼의 상태를 변경
+				
+				
+			});
+			
+			
+			
+		});
+	</script>
+</body>
+</html>
